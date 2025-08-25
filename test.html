@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Take Test</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Test Page</h1>
+  </header>
+
+  <main>
+    <section id="intro">
+      <h2>Test Instructions</h2>
+      <p>You must enter the access code to unlock the test.</p>
+      <input type="text" id="accessCode" placeholder="Enter Access Code">
+      <button onclick="unlockTest()">Unlock Test</button>
+      <p id="unlockMsg"></p>
+    </section>
+
+    <section id="testSection" style="display:none;">
+      <h2>Test</h2>
+      <div id="testContainer"></div>
+      <button onclick="submitTest()">Submit Test</button>
+      <p id="testMsg"></p>
+    </section>
+  </main>
+
+  <script type="module" src="js/test.js"></script>
+</body>
+</html>

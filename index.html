@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Website</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="test.html">Test</a>
+      <a href="results.html">My Results</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Our Test Platform</h1>
+    <p>Instructions about the test go here.</p>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>This platform lets you take tests and track your scores.</p>
+  </section>
+
+  <section id="auth">
+    <h2>Sign Up / Sign In</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="signup()">Sign Up</button>
+    <button onclick="login()">Login</button>
+    <button onclick="logout()">Logout</button>
+  </section>
+
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>All User Scores</h2>
+      <table border="1" id="scoresTable">
+        <thead>
+          <tr>
+            <th>User Email</th>
+            <th>Score</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody id="scoresBody"></tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Add New Test</h2>
+      <input type="text" id="testTitle" placeholder="Test Title">
+      <textarea id="testQuestions" placeholder='Enter questions as JSON'></textarea>
+      <button onclick="addNewTest()">Add Test</button>
+      <p id="testMsg"></p>
+    </section>
+
+    <section>
+      <h2>Users</h2>
+      <ul id="userList"></ul>
+    </section>
+  </main>
+
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>
